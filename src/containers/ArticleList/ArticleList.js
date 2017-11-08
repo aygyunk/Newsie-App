@@ -31,6 +31,7 @@ class ArticleList extends Component {
       <div className="article-list">
         {this.state.articles.map(article => (
           <ArticleCard
+            key={article.title}
             title={article.title}
             imageUrl={article.image}
             source={article.source}
