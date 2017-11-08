@@ -13,9 +13,9 @@ class ArticleCard extends Component {
 
   render() {
     return (
-      <div>
-        <img src={this.props.imageUrl} width="100px" />
-        {this.props.title}
+      <div className="article-card">
+        <img src={this.props.imageUrl} className="thumbnail" width="100px" />
+        <p className="title">{this.props.title}</p>
       </div>
     );
   }
