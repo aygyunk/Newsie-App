@@ -1,1 +1,9 @@
+.article-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
+.article-list .article-card {
+  flex: 0 0 25%;
+}

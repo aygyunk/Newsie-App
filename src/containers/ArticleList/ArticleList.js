@@ -28,7 +28,7 @@ class ArticleList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="article-list">
         {this.state.articles.map(article => (
           <ArticleCard
             title={article.title}
