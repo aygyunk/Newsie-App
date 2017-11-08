@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  overflow-y: auto;
 }
 
 .article-list .article-card {

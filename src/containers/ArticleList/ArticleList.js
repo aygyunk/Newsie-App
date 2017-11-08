@@ -21,7 +21,7 @@ class ArticleList extends Component {
     //   });
     // });
 
-    Articles.fetch().then(({ articles }) =>
+    Articles.fetch().then(articles =>
       this.setState(prevState => ({ ...prevState, articles })),
     );
   }
