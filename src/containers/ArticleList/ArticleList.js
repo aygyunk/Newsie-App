@@ -1,35 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import ArticleCard from 'components/ArticleCard';
-import Articles from 'modules/Articles';
 
 import './ArticleList.css';
 
 class ArticleList extends Component {
-  state = {
-    articles: [],
+  static propTypes = {
+    articles: PropTypes.array.isRequired,
   };
-
-  componentDidMount() {
-    // Articles.fetch().then(function(data) {
-    //   const articles = data.articles;
-    //
-    //   this.setState(function(prevState) {
-    //     return Object.assign({}, prevState, {
-    //       articles: articles,
-    //     });
-    //   });
-    // });
-
-    Articles.fetch().then(articles =>
-      this.setState(prevState => ({ ...prevState, articles })),
-    );
-  }
 
   render() {
     return (
       <div className="article-list">
-        {this.state.articles.map(article => (
+        {this.props.articles.map(article => (
           <ArticleCard
             key={article.title}
             title={article.title}
