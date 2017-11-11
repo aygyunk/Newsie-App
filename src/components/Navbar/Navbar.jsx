@@ -34,18 +34,18 @@ class Navbar extends Component {
             <p>tech</p>
           </NavLink>
           <NavLink
-            to="/arts"
+            to="/music"
             className="Navbar__links__link"
             activeClassName="is-active"
           >
-            <p>arts</p>
+            <p>music</p>
           </NavLink>
           <NavLink
-            to="/fashion"
+            to="/gaming"
             className="Navbar__links__link"
             activeClassName="is-active"
           >
-            <p>fashion</p>
+            <p>gaming</p>
           </NavLink>
           <NavLink
             to="/business"
@@ -55,11 +55,11 @@ class Navbar extends Component {
             <p>business</p>
           </NavLink>
           <NavLink
-            to="/travel"
+            to="/entertainment"
             className="Navbar__links__link"
             activeClassName="is-active"
           >
-            <p>travel</p>
+            <p>entertainment</p>
           </NavLink>
           <NavLink
             to="/environment"
