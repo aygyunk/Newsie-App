@@ -1,6 +1,6 @@
 .Navbar {
   background-color: steelblue;
-  height: 80px;
+  min-height: 80px;
   margin-bottom: 12px;
   display: flex;
   flex-flow: row nowrap;
@@ -9,6 +9,52 @@
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
+  position: relative;
+}
+
+.Navbar__links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.Navbar__links__link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+}
+
+.Navbar__links__link.is-active::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 13px 13px 13px;
+  border-color: transparent transparent #ffffff transparent;
+  transform: translateX(-50%);
+}
+
+.Navbar__links__link p {
+  padding: 0 15px;
+}
+
+.Navbar__links__link + .Navbar__links__link p {
+  border-left: 1px solid white;
 }
 
 .Navbar .logo {
