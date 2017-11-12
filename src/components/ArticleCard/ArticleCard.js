@@ -9,8 +9,7 @@ class ArticleCard extends Component {
   static propTypes = {
     title: PropTypes.string,
     imageUrl: PropTypes.string,
-    source: PropTypes.string,
-    onClick: PropTypes.func,
+    sourceUrl: PropTypes.string,
   };
 
   render() {
@@ -18,7 +17,9 @@ class ArticleCard extends Component {
       <div className="article-card">
         <img src={this.props.imageUrl} className="thumbnail" width="100px" />
         <div className="information">
-          <p className="title">{this.props.title}</p>
+          <a href={this.props.sourceUrl} target="_blank" className="title">
+            {this.props.title}
+          </a>
           <Voter id={this.props.title} />
         </div>
       </div>

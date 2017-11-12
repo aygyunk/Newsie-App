@@ -21,7 +21,7 @@ class Articles {
         return articles.map(article => ({
           title: article.title,
           image: article.urlToImage,
-          source: '',
+          url: article.url,
         }));
       });
   }

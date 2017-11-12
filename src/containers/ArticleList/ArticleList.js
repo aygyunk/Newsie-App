@@ -18,8 +18,7 @@ class ArticleList extends Component {
             key={article.title}
             title={article.title}
             imageUrl={article.image}
-            source={article.source}
-            onClick={() => {}}
+            sourceUrl={article.url}
           />
         ))}
       </div>

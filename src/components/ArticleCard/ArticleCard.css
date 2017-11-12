@@ -29,6 +29,11 @@
   color: #fff;
   font-size: 18px;
   flex: 1;
+  text-decoration: none;
+}
+
+.article-card .title:hover {
+  text-decoration: underline;
 }
 
 .article-card .voter {
