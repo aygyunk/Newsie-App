@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Voter from 'components/Voter';
+
 import './ArticleCard.css';
 
 class ArticleCard extends Component {
@@ -15,7 +17,10 @@ class ArticleCard extends Component {
     return (
       <div className="article-card">
         <img src={this.props.imageUrl} className="thumbnail" width="100px" />
-        <p className="title">{this.props.title}</p>
+        <div className="information">
+          <p className="title">{this.props.title}</p>
+          <Voter id={this.props.title} />
+        </div>
       </div>
     );
   }

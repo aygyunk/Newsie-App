@@ -1,0 +1,22 @@
+.voter {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.voter svg {
+  display: block;
+}
+
+.voter .vote-up {
+  margin-bottom: 5px;
+}
+
+.voter .count {
+  color: #fff;
+  user-select: none;
+}
+
+.voter .vote-down {
+  margin-top: 5px;
+}

@@ -4,6 +4,7 @@
   background-color: #000;
   min-width: 400px;
   height: 275px;
+  user-select: none;
 }
 
 .article-card .thumbnail {
@@ -13,12 +14,23 @@
   opacity: 0.33;
 }
 
-.article-card .title {
+.article-card .information {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 24px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
+
+.article-card .title {
   color: #fff;
   font-size: 18px;
+  flex: 1;
+}
+
+.article-card .voter {
+  flex: 0;
 }
