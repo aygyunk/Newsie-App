@@ -6,7 +6,6 @@ import {
   Music,
   Sports,
   Tech,
-  World,
   Gaming,
   Entertainment,
   Business,

@@ -1,10 +1,4 @@
-import axios from 'axios';
-
 import NewsAPI from 'modules/NewsAPI';
-
-import data from './data.json';
-
-const NEWS_API_KEY = 'f3ddd6f982ff4d96871f08cac80786d8';
 
 class Articles {
   static fetch({ source, sortBy }) {
