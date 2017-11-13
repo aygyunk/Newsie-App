@@ -5,13 +5,13 @@ import Page from 'components/Page';
 import ArticleList from 'containers/ArticleList';
 import Articles from 'modules/Articles';
 
-class SportsPage extends Component {
+class Music extends Component {
   state = {
     articles: [],
   };
 
   componentDidMount() {
-    Articles.fetch({ source: 'espn', sortBy: 'top' }).then(articles =>
+    Articles.fetch({ source: 'mtv-news', sortBy: 'top' }).then(articles =>
       this.setState(prevState => ({ ...prevState, articles })),
     );
   }
@@ -25,4 +25,4 @@ class SportsPage extends Component {
   }
 }
 
-export default SportsPage;
+export default Music;

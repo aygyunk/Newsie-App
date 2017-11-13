@@ -13,13 +13,6 @@ class Navbar extends Component {
 
         <div className="Navbar__links">
           <NavLink
-            to="/world"
-            className="Navbar__links__link"
-            activeClassName="is-active"
-          >
-            <p>world</p>
-          </NavLink>
-          <NavLink
             to="/sports"
             className="Navbar__links__link"
             activeClassName="is-active"

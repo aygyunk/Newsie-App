@@ -5,16 +5,13 @@ import Page from 'components/Page';
 import ArticleList from 'containers/ArticleList';
 import Articles from 'modules/Articles';
 
-class EntertainmentPage extends Component {
+class Sports extends Component {
   state = {
     articles: [],
   };
 
   componentDidMount() {
-    Articles.fetch({
-      source: 'entertainment-weekly',
-      sortBy: 'top',
-    }).then(articles =>
+    Articles.fetch({ source: 'espn', sortBy: 'top' }).then(articles =>
       this.setState(prevState => ({ ...prevState, articles })),
     );
   }
@@ -28,4 +25,4 @@ class EntertainmentPage extends Component {
   }
 }
 
-export default EntertainmentPage;
+export default Sports;

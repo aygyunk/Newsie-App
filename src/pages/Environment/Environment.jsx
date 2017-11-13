@@ -5,13 +5,16 @@ import Page from 'components/Page';
 import ArticleList from 'containers/ArticleList';
 import Articles from 'modules/Articles';
 
-class GamingPage extends Component {
+class Environment extends Component {
   state = {
     articles: [],
   };
 
   componentDidMount() {
-    Articles.fetch({ source: 'polygon', sortBy: 'top' }).then(articles =>
+    Articles.fetch({
+      source: 'national-geographic',
+      sortBy: 'top',
+    }).then(articles =>
       this.setState(prevState => ({ ...prevState, articles })),
     );
   }
@@ -25,4 +28,4 @@ class GamingPage extends Component {
   }
 }
 
-export default GamingPage;
+export default Environment;

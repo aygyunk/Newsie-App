@@ -5,7 +5,7 @@ import Page from 'components/Page';
 import ArticleList from 'containers/ArticleList';
 import Articles from 'modules/Articles';
 
-class TechPage extends Component {
+class Tech extends Component {
   state = {
     articles: [],
   };
@@ -25,4 +25,4 @@ class TechPage extends Component {
   }
 }
 
-export default TechPage;
+export default Tech;

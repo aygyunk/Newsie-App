@@ -5,14 +5,14 @@ import Page from 'components/Page';
 import ArticleList from 'containers/ArticleList';
 import Articles from 'modules/Articles';
 
-class BusinessPage extends Component {
+class Entertainment extends Component {
   state = {
     articles: [],
   };
 
   componentDidMount() {
     Articles.fetch({
-      source: 'the-wall-street-journal',
+      source: 'entertainment-weekly',
       sortBy: 'top',
     }).then(articles =>
       this.setState(prevState => ({ ...prevState, articles })),
@@ -28,4 +28,4 @@ class BusinessPage extends Component {
   }
 }
 
-export default BusinessPage;
+export default Entertainment;
